@@ -1,0 +1,197 @@
+body{
+  background-color: #02010a;
+}
+
+#contenido{
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#cabecera{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  font-family: 'Dancing Script';
+  animation: slidein 3s;
+}
+
+#cabecera >h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 0 #02010a;
+  background-color: inherit;
+  padding-left: 3%;
+}
+
+#MenuNav{
+  margin-left: 40%;
+  margin-top: 2.8%;
+  background-color: inherit;
+}
+
+#MenuNav a{
+  text-decoration: none;
+}
+
+.imgs{
+  box-shadow: 2px 2px 2px #02010a;
+	-moz-box-shadow: 2px 2px 2px #02010a;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+}
+
+
+#imagenCentral{
+  width: 100%;
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+#imagen1{
+  /* margin: 3%; */
+  width: 90%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#imagenSecundaria{
+  width: 100%;
+  background-color: #d5c75f;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#paisajes{
+  width: 45%;
+  margin: 4%;
+  margin-left: 3%;
+}
+
+#paisajes:hover{
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+
+  box-shadow: 2px 2px 2px #82c3a6;
+	-moz-box-shadow: 2px 2px 2px #82c3a6;
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+
+  border: 2px;
+  -moz-border: 2px;
+  -webkit-border: 2px;
+}
+
+#retratos{
+  width: 45%;
+  margin-top:4%;
+  margin-right:4%;
+  margin-bottom:4%;
+  margin-left: 0%;
+}
+
+#retratos:hover{
+  transform: translate(20px,-5px);
+  -ms-transform: translate(20px,-5px);
+  -webkit-transform: translate(20px,-5px);
+
+  box-shadow: 2px 2px 2px #82c3a6;
+	-moz-box-shadow: 2px 2px 2px #82c3a6;
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+
+  border: 2px;
+  -moz-border: 2px;
+  -webkit-border: 2px;
+}
+
+#Pie{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  font-family: 'Dancing Script';
+  margin:0;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#contacto{
+  width: 25%;
+  text-align: center;
+}
+
+#termino{
+  width: 25%;
+  text-align: center;
+}
+
+#redSoc{
+  width: 25%;
+  text-align: center;
+}
+
+.imgRedes{
+  width: 15%;
+  vertical-align: text-top;
+}
+
+#derechos{
+  width: 25%;
+  text-align: center;
+}
+
+@media screen and (max-width:899px){
+  #contenido{
+    width: 100%;
+  }
+
+  #cabecera{
+    width: 100%;
+    flex-direction: column;
+    order: 1;
+  }
+
+  #cabecera h1{
+    text-align: center;
+  }
+
+  #MenuNav{
+    width: 100%;
+    order: 2;
+    margin: 0;
+    text-align: center;
+  }
+
+  #imagenSecundaria{
+    flex-direction: column;
+  }
+
+  #paisajes{
+    width: 90%;
+    margin: 5%;
+  }
+
+  #retratos{
+    width: 90%;
+    margin: 5%;
+  }
+
+  #Pie{
+    flex-direction: column;
+  }
+
+  #Pie section{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein{
+
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+}
